@@ -11,7 +11,7 @@ export default function About() {
         </h1>
 
         <p className="text-slate-400 leading-relaxed mb-10">
-          I’m <span className="text-white font-medium">Alvin</span>, a Network &
+          I’m <span className="text-white font-medium">Alvin Richard Hidayat Aras</span>, a Network &
           Web Enthusiast with a strong interest in network installation, system
           security, and modern web development. I enjoy building reliable
           networks and clean, scalable websites using modern technologies.

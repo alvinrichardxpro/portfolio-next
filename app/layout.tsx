@@ -1,4 +1,5 @@
-import "./globals.css";
+import "@/app/globals.css"; 
+
 import Navbar from "@/components/Navbar";
 import PageTransition from "@/components/PageTransition";
 

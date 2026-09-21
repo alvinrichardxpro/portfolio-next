@@ -36,9 +36,9 @@ export default function Home() {
 
         {/* TITLE */}
         <h1 className="text-5xl font-extrabold mb-6">
-          Hi, I&apos;m{" "}
-          <span className="text-blue-400">Alvin</span>{" "}
-          <span className="inline-block animate-bounce">👋</span>
+          Hi,{" "}
+          <span className="text-blue-400">Welcome to my website</span>{" "}
+          <span className="inline-block animate-bounce"></span>
         </h1>
 
         {/* SUBTITLE */}
