@@ -9,18 +9,21 @@ export default function Projects() {
       description: "LAN & WiFi installation for school and small office.",
       tech: ["Networking", "LAN", "WiFi"],
       category: "Infrastructure",
+      link: "https://medium.com/@alvinrichard.xpro",
     },
     {
       title: "Cybersecurity Lab",
       description: "Basic firewall and network security configuration.",
       tech: ["Firewall", "Security", "Linux"],
       category: "Security",
+      link: "https://medium.com/@alvinrichard.xpro",
     },
     {
       title: "Personal Portfolio",
       description: "Portfolio website built with Next.js and Tailwind CSS.",
       tech: ["Next.js", "Tailwind", "Web"],
       category: "Development",
+      link: "https://medium.com/@alvinrichard.xpro",
     },
   ];
 
@@ -46,9 +49,12 @@ export default function Projects() {
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <a
               key={index}
-              className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/60 hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] overflow-hidden"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/60 hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] overflow-hidden cursor-pointer"
             >
               {/* GRADIENT OVERLAY ON HOVER */}
               <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none" />
@@ -59,9 +65,8 @@ export default function Projects() {
                   <span className="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-800/80 text-blue-400 border border-slate-700/50">
                     {project.category}
                   </span>
-                  <span className="flex h-2 w-2 relative">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                  <span className="flex items-center gap-1.5 text-xs text-slate-400 group-hover:text-blue-400 transition">
+                    Read Article ↗
                   </span>
                 </div>
 
@@ -87,7 +92,7 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 

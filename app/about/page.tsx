@@ -3,9 +3,30 @@
 import Link from "next/link";
 
 export default function About() {
+  const experiences = [
+    {
+      title: "Proyek Interkoneksi Antar AS",
+      company: "PT Qelopak",
+      date: "Desember 2025",
+      desc: "Analisis kebutuhan, perancangan topologi (VLAN, routing intra/inter-AS), implementasi router/switch/firewall, serta penerapan keamanan QoS & ACLs.",
+    },
+    {
+      title: "Proyek Membangun Infrastruktur Digital",
+      company: "PT Ginvo Studio",
+      date: "Juni 2025",
+      desc: "Perancangan topologi jaringan LAN, MAN, WAN, segmentasi VLAN, routing policy, serta pemantauan menggunakan Winbox dan Ubuntu Server.",
+    },
+    {
+      title: "Proyek Membangun Jaringan Small Office",
+      company: "Kreasi Media",
+      date: "Desember 2024",
+      desc: "Perancangan LAN/WLAN, crimping kabel, konfigurasi layanan File Sharing dan Printer Sharing antar komputer.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white px-6 py-24 relative overflow-hidden">
-      {/* Background Glow Elements */}
+      {/* BACKGROUND GLOW */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -13,53 +34,99 @@ export default function About() {
           About <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Me</span>
         </h1>
 
-        <p className="text-slate-300 leading-relaxed mb-12 max-w-2xl mx-auto text-base md:text-lg">
-          I'm{" "}
+        <p className="text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto text-base md:text-lg">
+          Saya{" "}
           <span className="text-white font-semibold underline decoration-blue-500/50 underline-offset-4">
             Alvin Richard Hidayat Aras
           </span>
-          , a Network & Web Enthusiast with a strong interest in network installation, system security, and modern web development. I enjoy building reliable networks and clean, scalable websites using modern technologies.
+          , siswa SMK Informatika Pesat jurusan Teknik Komputer dan Jaringan (TKJ). Berfokus pada infrastruktur jaringan, administrasi sistem Linux, serta pemantauan jaringan menggunakan MikroTik, Cisco, dan Zabbix.
         </p>
 
-        {/* SKILLS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mb-16">
-          {/* Card 1: Networking */}
-          <div className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="w-3 h-3 rounded-full bg-blue-400 shadow-sm shadow-blue-400" />
-              <h3 className="text-lg font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
-                Networking
-              </h3>
-            </div>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              LAN, WiFi setup, network monitoring, and troubleshooting.
-            </p>
-          </div>
+        {/* CALL TO ACTION BUTTONS */}
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
+          <a
+            href="/cv-alvin.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-xl transition duration-200 shadow-lg shadow-blue-500/25 text-sm"
+          >
+            📄 Download CV
+          </a>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 border border-slate-700 bg-slate-800/60 hover:bg-slate-800 text-slate-300 hover:text-white font-medium px-6 py-3 rounded-xl transition duration-200 text-sm"
+          >
+            💬 Hubungi Saya
+          </Link>
+        </div>
 
-          {/* Card 2: Security */}
-          <div className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="w-3 h-3 rounded-full bg-indigo-400 shadow-sm shadow-indigo-400" />
-              <h3 className="text-lg font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
-                Security
-              </h3>
-            </div>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Firewall configuration, basic cybersecurity, and system hardening.
-            </p>
-          </div>
+        {/* CERTIFICATIONS SECTION */}
+        <div className="text-left mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-slate-100 flex items-center gap-2">
+            <span className="w-2.5 h-2.5 rounded-full bg-blue-400 shadow-sm shadow-blue-400" />
+            Certifications
+          </h2>
 
-          {/* Card 3: Web Development */}
-          <div className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="w-3 h-3 rounded-full bg-cyan-400 shadow-sm shadow-cyan-400" />
-              <h3 className="text-lg font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
-                Web Development
-              </h3>
+          <div className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 transition duration-300">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <div>
+                <span className="text-xs font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">
+                  Sertifikat Kompetensi Resmi
+                </span>
+                <h3 className="text-lg font-bold text-white group-hover:text-blue-300 transition">
+                  Interkoneksi Antar Autonomous System (AS) dengan Implementasi Routing Policy & Segmentasi VLAN
+                </h3>
+              </div>
+              <div className="text-left sm:text-right">
+                <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
+                  Nilai: 89 (Kompeten)
+                </span>
+              </div>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Next.js, Tailwind CSS, responsive and modern UI design.
+
+            <p className="text-sm text-slate-400 mb-4">
+              Penerbit: <strong className="text-slate-200">PT Qelopak Teknologi Indonesia</strong> • Des 2025
             </p>
+
+            <ul className="text-xs text-slate-300 grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6 bg-slate-950/40 p-4 rounded-xl border border-slate-800/80">
+              <li>✓ Analisis Kebutuhan Jaringan & Topologi</li>
+              <li>✓ Implementasi VLAN & Encapsulation</li>
+              <li>✓ Routing Intra AS & Routing Antar AS</li>
+              <li>✓ QoS, Port Security, & ACLs</li>
+            </ul>
+
+            <a
+              href="/sertifikat-qelopak.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 hover:text-blue-300 transition"
+            >
+              Lihat Sertifikat Asli (PDF) ↗
+            </a>
+          </div>
+        </div>
+
+        {/* PROJECT & EXPERIENCE HISTORY */}
+        <div className="text-left mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-slate-100 flex items-center gap-2">
+            <span className="w-2.5 h-2.5 rounded-full bg-indigo-400 shadow-sm shadow-indigo-400" />
+            Practical Experience
+          </h2>
+
+          <div className="space-y-4">
+            {experiences.map((exp, i) => (
+              <div
+                key={i}
+                className="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 hover:border-slate-700 transition"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                  <h3 className="text-base font-bold text-white">{exp.title}</h3>
+                  <span className="text-xs text-slate-400">{exp.date}</span>
+                </div>
+                <p className="text-xs font-semibold text-blue-400 mb-3">{exp.company}</p>
+                <p className="text-sm text-slate-300 leading-relaxed">{exp.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
 
