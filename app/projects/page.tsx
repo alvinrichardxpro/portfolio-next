@@ -18,13 +18,6 @@ export default function Projects() {
       category: "Security",
       link: "https://medium.com/@alvinrichard.xpro",
     },
-    {
-      title: "Personal Portfolio",
-      description: "Portfolio website built with Next.js and Tailwind CSS.",
-      tech: ["Next.js", "Tailwind", "Web"],
-      category: "Development",
-      link: "https://medium.com/@alvinrichard.xpro",
-    },
   ];
 
   return (
@@ -46,15 +39,15 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* CENTERED CARDS */}
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <a
               key={index}
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/60 hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] overflow-hidden cursor-pointer"
+              className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/60 hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] overflow-hidden cursor-pointer w-full md:w-[380px]"
             >
               {/* GRADIENT OVERLAY ON HOVER */}
               <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none" />
