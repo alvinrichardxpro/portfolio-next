@@ -21,7 +21,8 @@ export default function Navbar() {
           href="/"
           className="font-bold text-lg text-white hover:text-blue-400 transition"
         >
-          Alvin<span className="text-blue-400">.</span>
+          Alvin Richard | Network & System
+          <span className="text-blue-400">.</span>
         </Link>
 
         {/* MENU */}
