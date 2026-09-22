@@ -5,22 +5,22 @@ import Link from "next/link";
 export default function About() {
   const experiences = [
     {
-      title: "Proyek Interkoneksi Antar AS",
+      title: "Inter-AS Interconnection Project",
       company: "PT Qelopak",
       date: "Desember 2025",
-      desc: "Analisis kebutuhan, perancangan topologi (VLAN, routing intra/inter-AS), implementasi router/switch/firewall, serta penerapan keamanan QoS & ACLs.",
+      desc: "Requirements analysis, topology design (VLAN, intra/inter-AS routing), implementation of routers, switches, and firewalls, as well as the application of QoS and ACL security measures.",
     },
     {
-      title: "Proyek Membangun Infrastruktur Digital",
+      title: "Digital Infrastructure Development Project",
       company: "PT Ginvo Studio",
-      date: "Juni 2025",
-      desc: "Perancangan topologi jaringan LAN, MAN, WAN, segmentasi VLAN, routing policy, serta pemantauan menggunakan Winbox dan Ubuntu Server.",
+      date: "June 2025",
+      desc: "Design of LAN, MAN, and WAN network topologies, VLAN segmentation, and routing policies, as well as monitoring using Winbox and Ubuntu Server.",
     },
     {
-      title: "Proyek Membangun Jaringan Small Office",
+      title: "Small Office Network Setup Project",
       company: "Kreasi Media",
       date: "Desember 2024",
-      desc: "Perancangan LAN/WLAN, crimping kabel, konfigurasi layanan File Sharing dan Printer Sharing antar komputer.",
+      desc: "LAN/WLAN design, cable crimping, and configuration of file and printer sharing services between computers.",
     },
   ];
 
@@ -35,11 +35,11 @@ export default function About() {
         </h1>
 
         <p className="text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto text-base md:text-lg">
-          Saya{" "}
+          I am{" "}
           <span className="text-white font-semibold underline decoration-blue-500/50 underline-offset-4">
             Alvin Richard Hidayat Aras
           </span>
-          , siswa SMK Informatika Pesat jurusan Teknik Komputer dan Jaringan (TKJ). Berfokus pada infrastruktur jaringan, administrasi sistem Linux, serta pemantauan jaringan menggunakan MikroTik, Cisco, dan Zabbix.
+          A student at SMK Informatika Pesat majoring in Computer and Network Engineering (TKJ). Focuses on network infrastructure, Linux system administration, and network monitoring using MikroTik, Cisco, and Zabbix.
         </p>
 
         {/* CALL TO ACTION BUTTONS */}
@@ -56,7 +56,7 @@ export default function About() {
             href="/contact"
             className="inline-flex items-center gap-2 border border-slate-700 bg-slate-800/60 hover:bg-slate-800 text-slate-300 hover:text-white font-medium px-6 py-3 rounded-xl transition duration-200 text-sm"
           >
-            💬 Hubungi Saya
+            💬 Contact me
           </Link>
         </div>
 
@@ -71,26 +71,26 @@ export default function About() {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
               <div>
                 <span className="text-xs font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">
-                  Sertifikat Kompetensi Resmi
+                  Official Certificate of Competence
                 </span>
                 <h3 className="text-lg font-bold text-white group-hover:text-blue-300 transition">
-                  Interkoneksi Antar Autonomous System (AS) dengan Implementasi Routing Policy & Segmentasi VLAN
+                  Interconnection Between Autonomous Systems (AS) with Routing Policy Implementation and VLAN Segmentation
                 </h3>
               </div>
               <div className="text-left sm:text-right">
                 <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
-                  Nilai: 89 (Kompeten)
+                 Score:89(Competent)
                 </span>
               </div>
             </div>
 
             <p className="text-sm text-slate-400 mb-4">
-              Penerbit: <strong className="text-slate-200">PT Qelopak Teknologi Indonesia</strong> • Des 2025
+              Publisher: <strong className="text-slate-200">PT Qelopak Teknologi Indonesia</strong> • Des 2025
             </p>
 
             <ul className="text-xs text-slate-300 grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6 bg-slate-950/40 p-4 rounded-xl border border-slate-800/80">
-              <li>✓ Analisis Kebutuhan Jaringan & Topologi</li>
-              <li>✓ Implementasi VLAN & Encapsulation</li>
+              <li>✓ Network Requirements & Topology Analysis</li>
+              <li>✓ VLAN & Encapsulation Implementation</li>
               <li>✓ Routing Intra AS & Routing Antar AS</li>
               <li>✓ QoS, Port Security, & ACLs</li>
             </ul>
@@ -101,7 +101,7 @@ export default function About() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 hover:text-blue-300 transition"
             >
-              Lihat Sertifikat Asli (PDF) ↗
+              View Original Certificate (PDF) ↗
             </a>
           </div>
         </div>
