@@ -10,9 +10,9 @@ export default function Projects() {
   const [featured, ...rest] = projects;
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-slate-950 text-white px-4 sm:px-6 lg:px-8 pt-20 pb-10 relative flex flex-col items-center">
-      {/* Ambient glow — kecil di HP */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[480px] sm:h-[480px] lg:w-[600px] lg:h-[600px] bg-blue-600/10 rounded-full blur-[90px] sm:blur-[130px] pointer-events-none" />
+    <main className="min-h-screen overflow-x-hidden bg-[#0b0f19] text-white px-4 sm:px-6 lg:px-8 pt-20 pb-10 relative flex flex-col items-center">
+      {/* Glow sangat tipis — sama seperti Home */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] bg-slate-500/[0.07] rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-4xl w-full mx-auto relative z-10 flex flex-col items-center min-w-0">
         <ProjectsHeader />

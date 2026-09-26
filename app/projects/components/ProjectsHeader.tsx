@@ -1,7 +1,7 @@
 export default function ProjectsHeader() {
   return (
     <div className="w-full text-center mb-8 sm:mb-10 px-2">
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent leading-tight">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-white leading-tight">
         My Projects
       </h1>
       <p className="text-slate-400 text-[13px] sm:text-sm max-w-md mx-auto leading-relaxed">

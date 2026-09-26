@@ -7,8 +7,8 @@ export default function Skills() {
   return (
     <section className="text-left mb-16">
       <SectionHeading
-        dotColor="bg-sky-400"
-        shadowColor="shadow-sky-400"
+        dotColor="bg-slate-400"
+        shadowColor=""
         title="What I Do"
         subtitle="Fokus keahlian utama di bidang jaringan, sistem, dan monitoring."
       />
@@ -17,21 +17,21 @@ export default function Skills() {
         {skillGroups.map((group) => (
           <div
             key={group.title}
-            className="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 hover:border-sky-500/40 transition duration-300"
+            className="border border-slate-800/60 rounded-2xl p-6 bg-white/[0.02] hover:border-slate-600 transition duration-300"
           >
-            <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mb-4">
-              <FontAwesomeIcon icon={group.icon} className="text-sky-400 text-lg" />
+            <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-slate-800 flex items-center justify-center mb-4">
+              <FontAwesomeIcon icon={group.icon} className="text-slate-300 text-lg" />
             </div>
             <h3 className="text-base font-bold text-white mb-4">{group.title}</h3>
             <ul className="space-y-2.5">
               {group.points.map((point) => (
                 <li
                   key={point}
-                  className="flex items-start gap-2.5 text-[13px] text-slate-300 leading-relaxed"
+                  className="flex items-start gap-2.5 text-[13px] text-slate-400 leading-relaxed"
                 >
                   <FontAwesomeIcon
                     icon={faCircleCheck}
-                    className="mt-0.5 shrink-0 text-[13px] text-sky-400/80"
+                    className="mt-0.5 shrink-0 text-[13px] text-slate-500"
                   />
                   {point}
                 </li>
