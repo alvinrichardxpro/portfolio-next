@@ -1,4 +1,7 @@
-import "@/app/globals.css"; 
+import "@/app/globals.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 import Navbar from "@/components/Navbar";
 import PageTransition from "@/components/PageTransition";

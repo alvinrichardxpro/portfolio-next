@@ -1,76 +1,59 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+
+const expertise = ["Network Infrastructure", "System Security", "Web Development"];
 
 export default function Home() {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    setShow(true);
-  }, []);
-
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white flex items-center justify-center px-6">
-      <div
-        className={`text-center max-w-3xl transition-all duration-1000 ${
-          show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
-        {/* PROFILE IMAGE */}
-        <div
-          className={`mx-auto mb-8 w-40 h-40 rounded-full overflow-hidden border-4 border-blue-500 transition-all duration-1000 ${
-            show ? "scale-100 opacity-100" : "scale-75 opacity-0"
-          }`}
-        >
+    <main className="min-h-screen bg-[#0b0f19] text-white flex items-center justify-center px-4 sm:px-6 py-24">
+      <div className="max-w-2xl w-full text-center">
+        {/* Foto - ukuran sedang */}
+        <div className="w-28 h-28 mx-auto mb-6 rounded-full overflow-hidden border border-slate-800 bg-slate-900">
           <Image
             src="/profile.jpg"
-            alt="Profile"
-            width={160}
-            height={160}
+            alt="Alvin Richard"
+            width={112}
+            height={112}
             className="object-cover w-full h-full"
             priority
           />
         </div>
 
-        {/* TITLE */}
-        <h1 className="text-5xl font-extrabold mb-6">
-          Hi,{" "}
-          <span className="text-blue-400">Welcome to my website</span>{" "}
-          <span className="inline-block animate-bounce"></span>
+        {/* Nama */}
+        <p className="text-sm tracking-widest uppercase text-blue-400 mb-3">
+          Network &amp; System Specialist
+        </p>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 leading-tight">
+          Alvin Richard
         </h1>
 
-        {/* SUBTITLE */}
-        <p className="text-slate-400 text-lg leading-relaxed mb-10">
-          A{" "}
-          <span className="text-white font-medium">
-            Network & Web Enthusiast
-          </span>{" "}
-          specializing in network installation, system security, and building
-          modern, fast, and scalable websites using{" "}
-          <span className="text-blue-400">Next.js</span>.
+        {/* Deskripsi */}
+        <p className="text-slate-400 text-sm sm:text-base leading-relaxed mb-8 max-w-xl mx-auto">
+          Fokus pada instalasi jaringan, keamanan sistem, dan pembangunan
+          infrastruktur digital yang modern dan handal.
         </p>
 
-        {/* BUTTONS */}
-        <div
-          className={`flex justify-center gap-4 transition-all duration-1000 delay-300 ${
-            show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
-        >
-          <Link
-            href="/about"
-            className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition"
-          >
-            About Me
-          </Link>
-
+        {/* Tombol */}
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 mb-10 sm:mb-12">
           <Link
             href="/projects"
-            className="border border-slate-600 hover:border-blue-400 px-6 py-3 rounded-xl font-semibold transition"
+            className="px-7 py-3 rounded-full bg-white text-slate-950 text-sm font-semibold hover:bg-slate-200 transition text-center"
           >
-            View Projects
+            Lihat Projects
           </Link>
+          <Link
+            href="/contact"
+            className="px-7 py-3 rounded-full border border-slate-700 text-sm font-semibold text-slate-300 hover:border-slate-500 hover:text-white transition text-center"
+          >
+            Hubungi Saya
+          </Link>
+        </div>
+
+        {/* Keahlian */}
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-8 border-t border-slate-800/80 text-xs sm:text-sm text-slate-500">
+          {expertise.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
         </div>
       </div>
     </main>
