@@ -33,7 +33,7 @@ export const projects: Project[] = [
       "Konfigurasi SSID, keamanan wireless dasar, dan file & printer sharing",
       "Dokumentasi instalasi dan panduan perawatan dasar",
     ],
-    mediumUrl: "https://medium.com",
+    mediumUrl: "https://medium.com/@alvinrichard.xpro",
   },
   {
     slug: "Antar-as-interconnection-topology",

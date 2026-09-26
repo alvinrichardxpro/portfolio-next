@@ -18,7 +18,7 @@ export default function SiteFooter() {
           Home
         </Link>
         <Link
-          href="https://medium.com"
+          href="https://medium.com/@alvinrichard.xpro"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 py-1 hover:text-slate-300 transition"

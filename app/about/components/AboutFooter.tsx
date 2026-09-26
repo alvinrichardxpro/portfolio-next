@@ -13,7 +13,7 @@ export default function AboutFooter() {
           Home
         </Link>
         <Link
-          href="https://medium.com"
+          href="https://medium.com/@alvinrichard.xpro"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 hover:text-slate-300 transition"
