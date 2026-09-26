@@ -19,7 +19,7 @@ export default function AboutFooter() {
           className="inline-flex items-center gap-1.5 hover:text-slate-300 transition"
         >
           <FontAwesomeIcon icon={faMedium} className="text-sm" />
-          Medium
+          nunaa
         </Link>
       </div>
     </footer>
